@@ -9,14 +9,21 @@ import Pricing from "./Pages/Pricing"
 import Contact from "./Pages/Contact"
 import Nab from "./components/Nab"
 import Footer from "./components/Footer"
-
+import { SignedIn , SignedOut , SignInButton , UserButton } from "@clerk/clerk-react"
 
 function App() {
 
   return (
+    <>
+    <header>
+          <SignedOut >
+            <SignInButton />
+          </SignedOut>
+          <SignedIn >
+            <UserButton />
+          </SignedIn>
+    </header>
      <BrowserRouter>
-   
-      
       <Nab />
         <Routes >
            <Route path="/" element={<Home/>} />
@@ -28,6 +35,7 @@ function App() {
         </Routes>
        <Footer />
      </BrowserRouter>
+    </>
   )
 }
 

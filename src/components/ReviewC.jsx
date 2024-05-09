@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Review({imageUrl, text, author}) {
   return (
+    <>
     <div>
         <div className="max-w-lg mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
       <div className="flex items-center justify-center bg-gray-200 h-48">
@@ -13,5 +14,9 @@ export default function Review({imageUrl, text, author}) {
       </div>
     </div>
     </div>
+     
+
+     
+    </>
   )
 }
