@@ -8,6 +8,7 @@ import Review from "./Pages/Review"
 import Pricing from "./Pages/Pricing"
 import Contact from "./Pages/Contact"
 import Nab from "./components/Nab"
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
            <Route path="/pricing" element={<Pricing/>} />
            <Route path="/contact" element={<Contact/>} />
         </Routes>
-       
+       <Footer />
      </BrowserRouter>
   )
 }

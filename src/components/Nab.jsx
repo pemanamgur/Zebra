@@ -66,7 +66,7 @@ function Nab() {
       </div>
   {/* Sidebar menu Mobile */}
        
-         <div className={clsx('fixed h-full w-screen lg:hidden bg-black/50 backdrop-blur-sm top-0 right-0 -translate-x-full transition-all',
+         <div className={clsx('fixed h-full w-screen lg:hidden bg-black/50 backdrop-blur-sm top-0 z-10 right-0 -translate-x-full transition-all',
             isSideMenuOpen && 'translate-x-0'
          )}>
            <section className='text-black bg-white flex-col absolute left-0 top-0 h-screen z-[100] flex p-6 w-56 gap-8'>
